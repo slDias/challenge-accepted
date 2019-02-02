@@ -1,8 +1,121 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #1962d1;
+}
+
+header img {
+  float: left;
+  width: auto;
+  height: 40px;
+  padding: 5px 0px 5px 0px;
+}
+
+header >.container>#search {
+  float: right;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: white;
+  padding-left: 5px;
+}
+
+header >.container>#search > input {
+  border: 0;
+  margin-top: 4px;
+}
+
+header >.container>#search >img {
+  height: 13px;
+  width: 17px;
+  padding-top: 7px;
+  margin-right: 5px;
+}
+
+#card-section {
+  float: left;
+  margin-left: 4%;
+}
+
+.card-list {
+  padding: 5px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.weather-card {
+  border: solid;
+  border-width: 0 5px 5px 0;
+  border-color: #c9deff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+  background: #ffffff;
+  height: 155px;
+  max-width: 250px;
+  font-size: 15px;
+}
+
+.weather-card-max-min {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.weather-card-max-min > div {
+  font: 20px bold;
+}
+
+.weather-card-min {
+  float: right;
+  color: blue;
+}
+
+.weather-card-max {
+  float: left;
+  color: red;
+}
+
+.weather-card-rain {
+  float: left;
+  margin: 10px 0 0 0;
+  width: 100%
+}
+
+.weather-card-rain div {
+  font: 20px bold;
+}
+
+.weather-card-mm {
+  float: left;
+}
+
+.weather-card-chance {
+  float: right;
+}
+
+#map-section {
+  float: left;
+  margin-top: 15px;
+  width: 70%
+}
+
+#map {
+  float: left;
+  height: 80%;
+  border: solid;
+  border-color: #1962d1;
+  border-width: 2px;
+  margin-top: 10px;
+  width: 100%;
 }
