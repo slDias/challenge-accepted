@@ -11,11 +11,15 @@ body {
   overflow: hidden;
 }
 
+header > .container {
+  width: 85%;
+}
+
 header {
   background: #1962d1;
 }
 
-header img {
+#logo >img {
   float: left;
   width: auto;
   height: 40px;
@@ -27,7 +31,21 @@ header >.container>#search {
   border-radius: 0px;
   margin-top: 10px;
   background: white;
-  padding-left: 5px;
+}
+
+#search > button{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  float:left;
+  border: 0;
+  background: white;
+}
+
+#search > button > img {
+  width: 20px;
+  height: 20px;
 }
 
 header >.container>#search > input {
@@ -35,35 +53,45 @@ header >.container>#search > input {
   margin-top: 4px;
 }
 
-header >.container>#search >img {
-  height: 13px;
-  width: 17px;
-  padding-top: 7px;
-  margin-right: 5px;
-}
-
 #card-section {
   float: left;
   margin-left: 4%;
+  margin-top: 10px;
+  height:81.5%;
+  overflow-x: scroll;
+  font-size: 30px;
 }
 
 .card-list {
   padding: 5px;
   margin: 0;
-  font-size: 20px;
+  height: 100px;
+  border: 2px solid;
 }
 
 .weather-card {
   border: solid;
-  border-width: 0 5px 5px 0;
+  border-width: 1px 5px 5px 1px;
   border-color: #c9deff;
   border-radius: 6px;
-  padding: 15px;
   margin-top: 15px;
   background: #ffffff;
-  height: 155px;
-  max-width: 250px;
+  max-width: 300px;
+  padding:0px;
+  float: left;
   font-size: 15px;
+}
+
+.weather-card-desc {
+  border-bottom: solid #c9deff 1px ;
+  padding: 0 10 5 10;
+  float: left;
+}
+
+.weather-card-icos{
+  float: left;
+  background: #f4f4f4;
+  padding: 0 10 5 10;
 }
 
 .weather-card-max-min {
@@ -105,8 +133,9 @@ header >.container>#search >img {
 }
 
 #map-section {
-  float: left;
+  /*float: left;*/
   margin-top: 15px;
+  margin: auto;
   width: 70%
 }
 
